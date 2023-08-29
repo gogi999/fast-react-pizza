@@ -3,15 +3,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import SearchOrder from '../features/order/SearchOrder';
+import Username from '../features/user/Username';
 
 export default function Header() {
   return (
-    <header className="bg-yellow-500">
-      <Link to="/">
+    <header className="flex items-center justify-between bg-yellow-500 uppercase px-4 sm:px-6 py-3 border-b border-stone-200">
+      <Link to="/" className="tracking-widest">
         Fast React Pizza Co.
       </Link>
       <SearchOrder />
-      <p>Mary</p>
+      <Username />
     </header>
   );
 }
